@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PATM</title>
+<link rel="stylesheet" href="{{url_for('.static', filename='display.css')}}">
+</head>
+<body>
+
+
+<div class="navbar">
+
+    <ul class="link">
+        <a href="#home">Home</a>
+        <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+    </ul>
+    
+</div>
+
+<div class="promo-banner">
+  <p> NEVER MISS ANY APPOITMENT.<br>Good health is our piority.</p>
+
+  <div class="appoint-tab">
+   <p>ONGOING APPOINTMENTS</p>
+
+  </div>
+
+
+
+</div>
+    <div class="table">
+         <table action="{{url_for('index')}}">
+          <th>Name</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Card No.</th>
+          <th>Dr. Name</th>
+      {% for user in uc %}
+      
+      <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+        <td>{{user[2]}}</td>
+        <td>{{user[3]}}</td>
+        <td><Pre>{{user[4]}}</Pre></td>
+      <td>  <form action="/user/{{user}}" class="delete-form">
+          
+        <button class="button-form" type="submit">delete</button>
+      </form></td>
+ 
+      </tr> 
+      
+      {% endfor%}
+    </table>
+  </div>
+    
+
+</body>
+</html>
