@@ -1,0 +1,134 @@
+body {
+    font-family:'Nunito',san-serif;
+    background-color:  #e4dede;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+body
+{ font-family: Arial, sans-serif; margin: 0;
+  padding: 0;
+  margin:0;
+   }
+
+.navbar
+{
+background-color:  #d3c5c5;
+  text-align: center;
+  height: 55px;
+}
+
+.navbar img {
+float: left;
+padding: 1px 2px;
+padding-right: 20pt;
+  padding-left: 20pt;
+}
+
+
+ul.link
+{
+display: inline-block;
+text-align: left;
+
+}
+
+.navbar a
+{ float: center;
+  color:  rgb(10, 10, 10);
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+   font-weight:bold;
+   font-size:20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+   }
+
+
+.navbar a:hover
+ { background-color: #ddd;
+   color: black;
+   height:60pt;}
+
+.form {
+    display: flex;
+    justify-content: center;
+    padding-top:3rem;
+    border-radius: 2000px;
+    text-align: center;
+    
+}
+
+
+.sub-form{
+    background-color: #f2f3f8;
+    border-radius: 400pt;   
+    display:flex;
+    flex-direction: column;
+    width: 45vh;
+    height: 70vh;
+    border-radius: 17px;
+    box-shadow: rgba(50, 50, 93, 0, 25) 0px 13px 27px -5px
+    rgbA(0, 0, 0, 3) 0px 8px 16px -8px;
+    background-colour: white;
+    text-align: center;
+    }
+
+h2 {
+    margin: 1.5rem 0 2rem 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    label{
+    padding-right: 200px;
+    opacity: 0.75;
+    text-align: center;
+    
+    }
+
+    input{
+    display: flexbox;
+    flex-direction: column;
+    padding-right: 2000px;
+    border-radius: 50px;
+    border-style: none;
+    outline: none;
+    margin-top:8px;
+    padding: 12px 14px;
+    width: 250px;
+    background-color: #EAEEED;
+    margin-left: 25px;
+    
+    }
+
+    input:focus {
+    opacity:0.7;
+    }
+
+    button{
+        padding: 12px 48px;
+        border-radius: 50px;
+        color:white;
+        margin-top: 1rem;
+        cursor: pointer;
+        outline: none;
+        border-width: px;
+        background-color: #1A1B27;
+        font-weight: 600;
+        width: 70%;
+        text-align: center;
+        justify-content: center;
+        }
+        
+        button:hover {
+        opacity: 0.8;
+        }
+        
+        
